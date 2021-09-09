@@ -81,7 +81,7 @@ startHTML.addEventListener("click", function hide() {
 
 
 //add event listener for the next button
-nextHTML.addEventListener("click", function(next) {
+nextHTML.addEventListener("click", function next() {
     i++;
     container2HTML.innerHTML = questions[i];
     j += 4;
@@ -105,12 +105,13 @@ nextHTML.addEventListener("click", function(next) {
             console.log("user clicked the correct button!!!")
                 //console.log(correctAnswers[1] + " YAYYY that is the correct answer!!")
         } else {
+            gameEnded;
             console.log("user clicked the wrong button!!!")
                 //console.log("Boo hoo to you! That was wrong! The correct answer is " + options[j + 4])
         }
     })
     if (questions.length == i) {
-        clearInterval(timerInterval);
+        clearInterval(timerInterval)
         //container2HTML.style = $("#quiz-container").hide
         timerHTML.textContent = "Congratulations Quizard! You've finished!"
     }
@@ -145,6 +146,7 @@ function setTime() {
 //when time gets to 0 we're gonna display this message:
 function sendMessage() {
     timerHTML.textContent = "TIMES UP, QUIZARD!!!";
+    scoreButton.style.visibility = "visible";
 }
 
 //WHEN all questions are answered or the timer reaches 0
@@ -174,7 +176,7 @@ function renderLastRegistered() {
     userTimeSetSpan.textContent = timeSet;
 }
 //add event listener to the "get my score" button
-scoreButton.addEventListener("click", function() {
+scoreButton.addEventListener("click", function hide() {
             //show the time-set  when the user clicks
             scoreHTML.textContent = "Congrats for finishing! Your score is  " + secondsLeft;
             scoreHTML.style.display = "";
