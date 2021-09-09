@@ -27,7 +27,9 @@ HTML, CSS, JavaScript, Git, .
 [Agnowledgments](https://github.com/mevaldovi/Quizgame_Revised#Agknowledgments)
 
 # Installation
-[Githubi_o](git deployed link goes here)
+[Githubi_o](https://mevaldovi.github.io/Quizgame_Revised/)
+
+If the link does not work, you can 
 # Usage
 Simply open the application,....jhjgjkhgk
 # License
