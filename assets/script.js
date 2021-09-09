@@ -50,8 +50,9 @@ console.log("start");
 //scoreHTML.style.display = "none";
 //initialize event listener for start button to start game
 //WHEN I press START, I want the question AND the question/answer text box to appear on the screen
-startHTML.addEventListener("click", function() {
+startHTML.addEventListener("click", function hide() {
     container2HTML.innerHTML = questions[i];
+    startHTML.style.visibility = "hidden";
     setTime();
 
 
@@ -68,17 +69,16 @@ startHTML.addEventListener("click", function() {
         console.log("First President Question" + questions[i]);
         //add event listener for the answers button!!!
         if (answer.matches("#answer-btn2") === true) {
-            //console.log(options[1] + " YAYYY that is the correct answer!!")
+            console.log(options[1] + " YAYYY that is the correct answer!!")
         } else {
-
-            //console.log("Boo hoo to you! That was wrong! The correct answer is " + options[1])
+            console.log("Boo hoo to you! That was wrong! The correct answer is " + options[1])
         }
     })
 });
 
 
 //add event listener for the next button
-nextHTML.addEventListener("click", function(next) {
+nextHTML.addEventListener("click", function Next() {
     i++;
     container2HTML.innerHTML = questions[i];
     j += 4;
@@ -91,6 +91,9 @@ nextHTML.addEventListener("click", function(next) {
     button4HTML.innerHTML = options[m];
     //     //This is Question 2: Civil War
     buttonHTML.addEventListener("click", function(event) {
+        // (for i=0; i < questions.length; i++;){
+
+        // }
         var gameEnded = true;
         var answer = event.target;
         //         //display Civil War question
@@ -110,9 +113,14 @@ nextHTML.addEventListener("click", function(next) {
         clearInterval(timerInterval);
         //container2HTML.style = $("#quiz-container").hide
         timerHTML.textContent = "Congratulations Quizard! You've finished!"
+        nextHTML.style.visibility = "hidden";
+        buttonHTML.style.visibility = "hidden";
+        container2HTML.innerHTML = "";
+        // containerHTML.innerHTML = "";
     }
 
 });
+
 var secondsLeft = 50;
 var timerInterval = "";
 //writing the timer function once user clicks "start" (see above)
@@ -171,11 +179,11 @@ function renderLastRegistered() {
     userTimeSetSpan.textContent = timeSet;
 }
 //add event listener to the "get my score" button
-scoreButton.addEventListener("click", function() {
+scoreButton.addEventListener("click", function(event) {
             //show the time-set  when the user clicks
             scoreHTML.textContent = "Congrats for finishing! Your score is  " + secondsLeft;
             scoreHTML.style.display = "";
-            console.log(scoreHTML);
+            // console.log(scoreHTML);
 
 
  scoreButton.addEventListener("click", function(event) {

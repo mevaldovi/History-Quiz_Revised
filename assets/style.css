@@ -49,8 +49,10 @@ main {
 
 #next-btn {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    visibility:visible;
 }
 
 #get-score {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    visibility:visible;
 }
