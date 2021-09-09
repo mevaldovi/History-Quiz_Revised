@@ -10,7 +10,7 @@ console.log("lets take a aquiz!!!!");
 containerHTML = document.getElementById("quiz-container");
 container2HTML = document.getElementById("question-container");
 timerHTML = document.getElementById("time-set");
-startHTML = document.getElementById("start-btn");
+startButton = document.getElementById("start-btn");
 nextHTML = document.getElementById("next-btn");
 buttonHTML = document.getElementById("answer-btns");
 button1HTML = document.getElementById("answer-btn1");
@@ -46,15 +46,26 @@ var losses = 0; //reset status
 //var start = alert("lets begin!!!");
 console.log("start");
 
-//hide the time-set
-//scoreHTML.style.display = "none";
+
+
 //initialize event listener for start button to start game
 //WHEN I press START, I want the question AND the question/answer text box to appear on the screen
-startHTML.addEventListener("click", function hide() {
+startButton.addEventListener("click", function hide() {
     //hide unnecessary buttons
-    startHTML.style.visibility = "hidden";
-    // scoreButton.innerHTML.style.visibility = "hidden";
+    startButton.style.visibility = "hidden";
+})
+
+let questions;
+
+startButton.addEevntListener("click", startQuiz)
+
+function startQuiz(){
     container2HTML.innerHTML = questions[i];
+    
+
+}
+
+    
     setTime();
 
 
@@ -77,7 +88,7 @@ startHTML.addEventListener("click", function hide() {
             //console.log("Boo hoo to you! That was wrong! The correct answer is " + options[1])
         }
     })
-});
+// });
 
 
 //add event listener for the next button
