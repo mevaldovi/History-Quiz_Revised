@@ -50,7 +50,10 @@ console.log("start");
 //scoreHTML.style.display = "none";
 //initialize event listener for start button to start game
 //WHEN I press START, I want the question AND the question/answer text box to appear on the screen
-startHTML.addEventListener("click", function() {
+startHTML.addEventListener("click", function hide() {
+    //hide unnecessary buttons
+    startHTML.style.visibility = "hidden";
+    // scoreButton.innerHTML.style.visibility = "hidden";
     container2HTML.innerHTML = questions[i];
     setTime();
 
