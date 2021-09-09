@@ -2,10 +2,10 @@
 
 
 ## Description
-
+A user-interactive, easy to use history quiz to test javascript fundamentals.
 
 ## Technology 
-HTML, CSS, JavaScript, Git, .
+HTML, CSS, JavaScript, Git.
 
 # Table of Contents
 [Description](https://github.com/mevaldovi/Quizgame_Revised#Description)
@@ -29,13 +29,16 @@ HTML, CSS, JavaScript, Git, .
 # Installation
 [Githubi_o](https://mevaldovi.github.io/Quizgame_Revised/)
 
-If the link does not work, you can 
+If the link does not work, you can clone down this repo and, in your code editor, right-click on the index.html file and select "Open in Default Browser".
 # Usage
-Simply open the application,....jhjgjkhgk
+See above. Answer four fundamental American History questions to test your knowledge.
 # License
 MIT License.
 # Contact
+
+[Github](https://github.com/mevaldovi/)
+
 Shoot me an email:[mevaldovi@gmail.com](mailto:mevaldovi@gmail.com)
 # Agknowledgments
-A special thanks to my classmates Jessamyn McTwigan and Christyn Garcia for letting me reference their code.
+
 "Last, but not least, I would like to thank me. I want to thank me for believing in me, I want to thank me for doing all this hard work. I wanna thank me for having no days off. I wanna thank me for never quitting. I wanna thank me for always been a giver and trying to give more than I receive. I want to thank me for trying to do more right than wrong. I want to thank me for just being me at all times.” --Snoop Dog
