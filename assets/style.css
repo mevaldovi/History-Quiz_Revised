@@ -1,0 +1,56 @@
+
+body {
+    display: flex;
+    background-color: #EEEEFF;
+}
+
+main {
+    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-flow: column;
+}
+
+#quiz-header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #28587B;
+}
+
+#question-container {
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+}
+
+#answer-btn1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#answer-btn2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#answer-btn3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#answer-btn4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#start-btn {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#next-btn {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#get-score {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
