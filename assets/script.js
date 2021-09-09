@@ -10,7 +10,7 @@ console.log("lets take a aquiz!!!!");
 containerHTML = document.getElementById("quiz-container");
 container2HTML = document.getElementById("question-container");
 timerHTML = document.getElementById("time-set");
-startButton = document.getElementById("start-btn");
+startHTML = document.getElementById("start-btn");
 nextHTML = document.getElementById("next-btn");
 buttonHTML = document.getElementById("answer-btns");
 button1HTML = document.getElementById("answer-btn1");
@@ -46,26 +46,12 @@ var losses = 0; //reset status
 //var start = alert("lets begin!!!");
 console.log("start");
 
-
-
+//hide the time-set
+//scoreHTML.style.display = "none";
 //initialize event listener for start button to start game
 //WHEN I press START, I want the question AND the question/answer text box to appear on the screen
-startButton.addEventListener("click", function hide() {
-    //hide unnecessary buttons
-    startButton.style.visibility = "hidden";
-})
-
-let questions;
-
-startButton.addEevntListener("click", startQuiz)
-
-function startQuiz(){
+startHTML.addEventListener("click", function() {
     container2HTML.innerHTML = questions[i];
-    
-
-}
-
-    
     setTime();
 
 
@@ -88,11 +74,11 @@ function startQuiz(){
             //console.log("Boo hoo to you! That was wrong! The correct answer is " + options[1])
         }
     })
-// });
+});
 
 
 //add event listener for the next button
-nextHTML.addEventListener("click", function next() {
+nextHTML.addEventListener("click", function(next) {
     i++;
     container2HTML.innerHTML = questions[i];
     j += 4;
@@ -116,13 +102,12 @@ nextHTML.addEventListener("click", function next() {
             console.log("user clicked the correct button!!!")
                 //console.log(correctAnswers[1] + " YAYYY that is the correct answer!!")
         } else {
-            gameEnded;
             console.log("user clicked the wrong button!!!")
                 //console.log("Boo hoo to you! That was wrong! The correct answer is " + options[j + 4])
         }
     })
     if (questions.length == i) {
-        clearInterval(timerInterval)
+        clearInterval(timerInterval);
         //container2HTML.style = $("#quiz-container").hide
         timerHTML.textContent = "Congratulations Quizard! You've finished!"
     }
@@ -157,7 +142,6 @@ function setTime() {
 //when time gets to 0 we're gonna display this message:
 function sendMessage() {
     timerHTML.textContent = "TIMES UP, QUIZARD!!!";
-    scoreButton.style.visibility = "visible";
 }
 
 //WHEN all questions are answered or the timer reaches 0
@@ -187,7 +171,7 @@ function renderLastRegistered() {
     userTimeSetSpan.textContent = timeSet;
 }
 //add event listener to the "get my score" button
-scoreButton.addEventListener("click", function hide() {
+scoreButton.addEventListener("click", function() {
             //show the time-set  when the user clicks
             scoreHTML.textContent = "Congrats for finishing! Your score is  " + secondsLeft;
             scoreHTML.style.display = "";
