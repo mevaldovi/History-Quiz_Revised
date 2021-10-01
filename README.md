@@ -28,7 +28,7 @@ HTML, CSS, JavaScript, Git.
 [Agnowledgments](https://github.com/mevaldovi/Quizgame_Revised#Agknowledgments)
 
 # Installation
-[Githubi_o](https://mevaldovi.github.io/Quizgame_Revised/)
+[Deployed app](https://mevaldovi.github.io/Quizgame_Revised/)
 
 If the link does not work, you can clone down this repo and, in your code editor, right-click on the index.html file and select "Open in Default Browser".
 # Usage
