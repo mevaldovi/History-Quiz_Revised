@@ -1,4 +1,7 @@
 # Quizgame_Revised
+
+[Deployed App](https://mevaldovi.github.io/Quizgame_Revised/)
+
 ![HistoryQuiz2](https://user-images.githubusercontent.com/83307023/135494802-c00c0cd6-9fb5-4438-8684-1c9940d07e20.PNG)
 
 
@@ -28,7 +31,6 @@ HTML, CSS, JavaScript, Git.
 [Agnowledgments](https://github.com/mevaldovi/Quizgame_Revised#Agknowledgments)
 
 # Installation
-[Deployed app](https://mevaldovi.github.io/Quizgame_Revised/)
 
 If the link does not work, you can clone down this repo and, in your code editor, right-click on the index.html file and select "Open in Default Browser".
 # Usage
