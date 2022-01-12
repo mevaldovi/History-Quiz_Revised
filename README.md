@@ -6,7 +6,7 @@ Deployed app: [https://mevaldovi.github.io/Quizgame_Revised](https://mevaldovi.g
 
 
 ## Description
-A user-interactive, easy to use history quiz to test javascript fundamentals.
+A user-interactive, easy to use history quiz to test JavaScript fundamentals.
 
 ## Technology 
 HTML, CSS, Vanilla JavaScript.
