@@ -1,6 +1,6 @@
 # Quizgame_Revised
 
-[Deployed App](https://mevaldovi.github.io/Quizgame_Revised/)
+Deployed app: [https://mevaldovi.github.io/Quizgame_Revised](https://mevaldovi.github.io/Quizgame_Revised)
 
 ![HistoryQuiz2](https://user-images.githubusercontent.com/83307023/135494802-c00c0cd6-9fb5-4438-8684-1c9940d07e20.PNG)
 
@@ -9,7 +9,7 @@
 A user-interactive, easy to use history quiz to test javascript fundamentals.
 
 ## Technology 
-HTML, CSS, JavaScript, Git.
+HTML, CSS, Vanilla JavaScript.
 
 # Table of Contents
 [Description](https://github.com/mevaldovi/Quizgame_Revised#Description)
@@ -32,14 +32,19 @@ HTML, CSS, JavaScript, Git.
 
 # Installation
 
-If the link does not work, you can clone down this repo and, in your code editor, right-click on the index.html file and select "Open in Default Browser".
+- No dependencies to install
+
+- Clone down this repo
+
+- Open index.html in default browser
+
 # Usage
 See above. Answer four fundamental American History questions to test your knowledge.
 # License
 MIT License.
 # Contact
 
-[Github](https://github.com/mevaldovi/)
+Github: [https://github.com/mevaldovi](https://github.com/mevaldovi)
 
 Shoot me an email:[mevaldovi@gmail.com](mailto:mevaldovi@gmail.com)
 # Agknowledgments
